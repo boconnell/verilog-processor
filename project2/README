@@ -1,0 +1,6 @@
+To run the test case:
+
+verilog test.v RiSC.v memories.v
+
+
+To change which test case is run, edit the $readmemh line in test.v to read from one of the *.exe file in the TESTS directory. The corresponding *.asm file for each *.exe file is a commented version of the assembly code which uses the RiSC-16 ISA.
