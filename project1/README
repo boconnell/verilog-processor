@@ -3,3 +3,11 @@ To run assmebler:
 ./bin/assemble <assembly-code-file> <machine-code-file>
 
 where <assembly-code-file points to a file that uses the RiSC-16 ISA and <machine-code-file> is the desired assembler output file
+
+------
+
+To run test case:
+
+verilog test.v RiSC.v
+
+test.v will read and run the machine-code-file "init.dat"
