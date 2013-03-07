@@ -1,0 +1,12 @@
+Updated assembler from project1. To run:
+
+./bin/assemble <assembly-code-file> <machine-code-file>
+
+where <assembly-code-file> is the input file of assembly code that uses the RiSC-16 ISA and <machine-code-file> is the file the machine code will be output to
+
+-----
+
+To run the test cases:
+verilog test-*.v RiSC.v memories.v
+
+where test-*.v (in roman numerals) reads from init*.usr and init*.sys (in decimal). The init*.usr and init*.sys initialize the user-space memory and system-memory, respectively. test-iv.v can run init4.usr and init4i.usr; Just change the correct $readmemh line in test-iv.v
